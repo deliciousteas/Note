@@ -86,3 +86,23 @@ jps is Experimental and Unsupported tool,用ps命令替代.
 [启动hdfs失败的几种情况](https://www.cnblogs.com/suhaha/p/9440557.html)  
 [jps命令](https://www.cnblogs.com/heihaozi/p/16007667.html#:~:text=jps%EF%BC%88Java%20Virtual%20Machine%20Process,%E5%94%AF%E4%B8%80ID%EF%BC%88LVMID%EF%BC%8CLocal%20Virtual)  
 [ps命令](https://www.runoob.com/linux/linux-comm-ps.html)  
+-----------------------
+# 12-25测试  
+jps打开失败？？  
+~~windows下配置hadoop环境，提示nativeIO报错，不知道问题如何解决，  
+现在能够通过maven拉取jar包，主要是不会写java，那么可以先用maven拉取依赖先写出代码，然后测试放到服务器测试了，就不管windowsdebug了。所以这两边同时开始，一个是java熟悉起来，熟悉hadoop的API并学会扩写abstract方法就行；另外一边解决服务器的jps启动问题。~~  
+1. datanode和namenode的log文件说明  
+2. yarn-site.xml配置文件，`yarn.nodemanager.log-dirs`和`yarn.nodemanager.local-dirs`参数  
+3. 启动单个进程，一个个看。`hadoop-daemon.sh`和`yarn-daemon.sh`脚本  
+测试结果：  
+namenode的log文件没有问题，查看datanode的log文件发现WARN报错提示是namenode和datanode的clusterID不一样，所以导致启动不了。修改四个节点的clusterId。  
+![不同机器的clusterid不一样](8a4c1b25224c5040ab2626a29d6f9d9.png)    
+之后测试启动集群，jps依然没反应，但是  
+`hdfs getconf -namenodes`命令显示namenode所在为boss这台机器；
+`hdfs dfsadmin -report`  命令显示live-datanode为4台，说明datanode的数量和状态。
+
+ps：不同节点的clusterid不一样，看log文件看namenode还需要看datanode的内容。  
+# 参考：   
+[hdfs常用文件操作命令](https://blog.csdn.net/qq_33689414/article/details/79651342)  
+[hdfs上传文件](https://blog.csdn.net/zhangvalue/article/details/80671217)  
+[集群初始化Namenode节点，集群各节点clusterId不一致](https://blog.51cto.com/u_15320818/4882760)

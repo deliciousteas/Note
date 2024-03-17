@@ -1,0 +1,50 @@
+# 校园内网络IP
+
+IP地址由网络+主机组成
+
+**Lan：**
+
+* local area network，通过交换机、路由器连接地理位置靠近（同一建筑物）的用户和应用程序。
+* 本地连接，例如以太网电缆、无线接入点
+
+**Wan：**
+
+* Wide area network，连接地理位置分散（全球各地）的用户和应用程序
+* VPN、租用线路和云等广域连接
+
+**Wlan：**
+
+Wireless local Area network无线局域网。使用无线信代替有线传输介质连接2-N个设备形成的局域网Lan，常部署在学校、家园、企业办公楼。
+
+**以太网：**
+
+一种计算机局域网技术。可以看作实现局域网通信的技术标准。
+
+私有地址通常是一下三个CIDR块：
+
+10.0.0.0 到 10.255.255.255（CIDR块：10.0.0.0/8）
+
+172.16.0.0 到 172.31.255.255（CIDR块：172.16.0.0/12）
+
+192.168.0.0 到 192.168.255.255（CIDR块：192.168.0.0/16）
+
+>  子网掩码和默认端口对于了解互联网通信不必深入。
+>
+> curl是客户端URL传输库，命令行工具，访问网络的。
+
+
+
+# 参考
+
+[LAN和WAN的区别](https://aws.amazon.com/cn/compare/the-difference-between-lan-and-wan/#:~:text=%E5%B1%80%E5%9F%9F%E7%BD%91(LAN)%20%E4%BD%BF%E7%94%A8%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C,%E6%95%B0%E5%AD%97%E4%BA%92%E5%8A%A8%E5%92%8C%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB%E3%80%82)
+
+[以太网局域网和互联网区别](什么是「以太网」，和局域网，互联网的区别是什么？ - 华为云开发者联盟的回答 - 知乎
+https://www.zhihu.com/question/511508659/answer/2565012876)
+
+[网络地址转换技术NAT](https://developer.aliyun.com/article/1361607)
+
+[利用tracert命令查看内网访问外网跃点过程](https://blog.csdn.net/weixin_39737757/article/details/110863995)
+
+[CMD查询校园网所在公网](https://www.volcengine.com/theme/939829-C-7-1)
+
+[第三方网站查询所在公网IP](https://ip.cn/)

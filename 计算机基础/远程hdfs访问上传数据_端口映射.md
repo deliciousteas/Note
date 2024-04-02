@@ -11,12 +11,14 @@ hdfs WebUI，可以正常访问，上传、删除文件夹，删除文件，但�
 报错提示：
 
 文件上传不了，`woker3`是我的内网节点名字，可以发现是解析不成功。
-
-![image-20240402155630050](C:\Users\22779\AppData\Roaming\Typora\typora-user-images\image-20240402155630050.png)
-
+![image](https://github.com/deliciousteas/Note/assets/107855849/a9d826a3-474d-42ba-aa51-f611982bca3a)
 
 
-![image-20240402155633096](C:\Users\22779\AppData\Roaming\Typora\typora-user-images\image-20240402155633096.png)
+![image](https://github.com/deliciousteas/Note/assets/107855849/f96cf090-61b7-442c-ba3f-c512a262bab0)
+
+
+
+
 
 解决方案：
 

@@ -36,19 +36,22 @@ yarn是一个资源管理组件，在WebUI界面中会显式你所有的applicat
 
 * **memory total**:yarn集群管理的内存总和。
 
-![](C:\Users\22779\AppData\Roaming\Typora\typora-user-images\image-20240411104311944.png)
+![image](https://github.com/deliciousteas/Note/assets/107855849/92b49877-0add-42b8-9e8b-398586995ee2)
+
 
 * VCores Total：yarn集群管理cpu-core的数量，实际上没用起来，只用了一块cpu
 
-![image-20240411104532942](C:\Users\22779\AppData\Roaming\Typora\typora-user-images\image-20240411104532942.png)
+![image](https://github.com/deliciousteas/Note/assets/107855849/6070886f-7393-4424-9464-e247917a7e33)
+
 
 最大分配为8G，4核心
 
-* ![image-20240411112047092](C:\Users\22779\AppData\Roaming\Typora\typora-user-images\image-20240411112047092.png)
+![image](https://github.com/deliciousteas/Note/assets/107855849/9a60721c-bd6d-4279-9f97-2e7af980a35a)
+
 
 如下图所示进入某个Application的界面，会发现界面最后状态是FAILED，报错原因在下，如果需要查看确切错误需要划到最下方看该application的subTask在哪个集群节点运行并查看它的log日志。
 
-![image-20240413090140869](C:\Users\22779\AppData\Roaming\Typora\typora-user-images\image-20240413090140869.png)
+![image](https://github.com/deliciousteas/Note/assets/107855849/8526dc70-003a-4b89-8571-2d5f3b3fd373)
 
 # SPark-submit命令
 

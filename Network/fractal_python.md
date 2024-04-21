@@ -1,3 +1,4 @@
+
 > 用python的turtle库做了两个分形树的测试，测试turtle画图效果，其中了解了python中return可以不追加任何参数默认返回None的情况。
 return在函数结束前，返回1-N个值。可以任何数据类型，甚至其他函数。
 
@@ -8,11 +9,14 @@ return在函数结束前，返回1-N个值。可以任何数据类型，甚至�
 `return`
 
 在用turtle画图时，return意味着不再递归调用自身，结束执行返回到调用函数处。
-结果图如下：
+## 结果图如下：
+![4fe41a44046d65b1781e0d874bb5a68](https://github.com/deliciousteas/Note/assets/107855849/5f6b5743-3430-4a72-8d17-420c4f38b94c)
 
+![a847aed9737b3b055d89d8a94382d1c](https://github.com/deliciousteas/Note/assets/107855849/f1c67b8a-87e2-42ea-a9df-f60380d386ed)
 
+![a863e8869271422edbd781fc69f000e](https://github.com/deliciousteas/Note/assets/107855849/427da60d-b243-4a65-ab46-4e572445b817)
 
-demo1如下：
+## demo1如下：
 import turtle
 #创建一个canvas画板
 hr=turtle.Turtle()
@@ -49,7 +53,7 @@ turtle.done()
 hr.write("  Click me!", font=("Courier", 12, "bold"))
 hr.onclick(baba, 1)
 
-demo2如下：
+## demo2如下：
 
 import random
 import turtle
@@ -87,6 +91,6 @@ turtle.speed(0)
 grow(150, 0.8, 23.3,10 )
 turtle.done()
 
-参考
+# 参考
 [demo2教程](https://www.youtube.com/watch?v=EICpm9rnPjE)
 [demo1教程](https://www.youtube.com/watch?v=RWtNQ8RQkO8)

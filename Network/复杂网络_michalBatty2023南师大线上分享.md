@@ -35,7 +35,8 @@
 
 分形是一种度量复杂系统的测度，那么问题指向如何measure描述空间结构。
 
-![image-20240421095626576](C:\Users\22779\AppData\Roaming\Typora\typora-user-images\image-20240421095626576.png)
+![image](https://github.com/deliciousteas/Note/assets/107855849/bec34e75-2ee7-46d7-91a7-e8565e7f98fe)
+
 
 > 达尔文，19世纪生物学家
 >

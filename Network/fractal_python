@@ -87,4 +87,6 @@ turtle.speed(0)
 grow(150, 0.8, 23.3,10 )
 turtle.done()
 
-# 参考
+参考
+[demo2教程](https://www.youtube.com/watch?v=EICpm9rnPjE)
+[demo1教程](https://www.youtube.com/watch?v=RWtNQ8RQkO8)

@@ -7,7 +7,8 @@
 * 在下图中name属性可以指定Servlet名称
 * value是指定Servlet监听的URL规则，只监听用户以value结尾的路径。
 
-![image-20240423170251402](C:\Users\22779\AppData\Roaming\Typora\typora-user-images\image-20240423170251402.png)
+![image](https://github.com/deliciousteas/Note/assets/107855849/7353ddc1-e2c9-4299-a7bd-6dd252be55a0)
+
 
 **method**(GET POST)
 
@@ -25,7 +26,8 @@ run/debug configuration进入，然后设置该server的类型和name，我test�
 * tomcat Server Settings：Http port，8080端口我的被spark用了，8081被tomcat用了，就用的8082
   * JMX:应用程序的端口，查看程序的状态。
 
-![image-20240423171511810](C:\Users\22779\AppData\Roaming\Typora\typora-user-images\image-20240423171511810.png)
+![image](https://github.com/deliciousteas/Note/assets/107855849/936eb14d-60ec-4d8c-8391-525fa379aaeb)
+
 
 ## web.xml参数
 
@@ -39,7 +41,8 @@ serverlet工作流：
 
 s01是project，ser001是一个模块运行。
 
-![image-20240423201222330](C:\Users\22779\AppData\Roaming\Typora\typora-user-images\image-20240423201222330.png)
+![image](https://github.com/deliciousteas/Note/assets/107855849/6c4a84f4-33f2-44e4-bf13-66a184e2a8cb)
+
 
 500是服务器设置错误
 

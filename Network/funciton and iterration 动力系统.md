@@ -13,7 +13,8 @@
 * 画图，输入x，output变小，那是收敛于fixed points；输入x，output增大，那是发散于fixed points
 * 发散的话，大值越大，小值更小
 
-![image-20240425114557625](C:\Users\deng\AppData\Roaming\Typora\typora-user-images\image-20240425114557625.png)
+![image](https://github.com/deliciousteas/Note/assets/107855849/d4559068-3b62-4a85-aa53-d139069a104f)
+
 
 > fixed points
 >
